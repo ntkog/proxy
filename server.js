@@ -4,7 +4,7 @@ const http = require('http');
 const httpProxy = require('http-proxy');
 const camelCase = require('camel-case');
 
-const target = process.argv[2] || process.env.PROXY_URL;
+const target = process.env["PROXY_URL"];
 if (!target) {
   console.error('`target` URL is missing');
   process.exit(1);

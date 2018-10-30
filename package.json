@@ -5,7 +5,7 @@
   "author": "Nathan Rajlich <nate@zeit.co>",
   "license": "MIT",
   "scripts": {
-    "start": "node server.js \"$PROXY_URL\""
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,7 @@
   },
   "now": {
     "files": [
-      "*.js"
-    ],
-    "env": [
-      "PROXY_URL"
+      "server.js"
     ]
   }
 }
