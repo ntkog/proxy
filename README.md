@@ -11,11 +11,13 @@ Backed by [`node-http-proxy`](https://github.com/nodejitsu/node-http-proxy).
 
 ## Usage
 
-Simply invoke `now now-examples/proxy` and specify the base URL you would
-like to proxy to:
+
 
 ```bash
-$ now now-examples/proxy -e PROXY_URL=http://my-apartment.example.com:8888/foo
+git clone https://github.com/ntkog/proxy.git
+cd proxy
+
+$ now -e PROXY_URL="http://my-apartment.example.com:8888/foo"
 ```
 
 
